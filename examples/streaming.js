@@ -4,7 +4,7 @@ var dynamo = require('../index'),
     Joi    = require('joi'),
     AWS    = dynamo.AWS;
 
-AWS.config.loadFromPath(process.env.HOME + '/.ec2/credentials.json');
+// AWS.config.loadFromPath(process.env.HOME + '/.ec2/credentials.json');
 
 var Product = dynamo.define('example-streaming-Product', {
   hashKey : 'ProductId',

@@ -5,7 +5,7 @@ var dynamo = require('../index'),
     AWS    = dynamo.AWS,
     Joi    = require('joi');
 
-AWS.config.loadFromPath(process.env.HOME + '/.ec2/credentials.json');
+// AWS.config.loadFromPath(process.env.HOME + '/.ec2/credentials.json');
 
 var BinModel = dynamo.define('example-binary', {
   hashKey : 'name',

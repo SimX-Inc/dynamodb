@@ -7,7 +7,7 @@ var dynamo = require('../index'),
     util   = require('util'),
     _      = require('lodash');
 
-AWS.config.loadFromPath(process.env.HOME + '/.ec2/credentials.json');
+// AWS.config.loadFromPath(process.env.HOME + '/.ec2/credentials.json');
 
 var DynamicModel = dynamo.define('example-dynamic-key', {
   hashKey    : 'id',

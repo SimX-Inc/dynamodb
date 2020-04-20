@@ -7,7 +7,7 @@ var dynamo = require('../index'),
     async  = require('async'),
     AWS    = dynamo.AWS;
 
-AWS.config.loadFromPath(process.env.HOME + '/.ec2/credentials.json');
+// AWS.config.loadFromPath(process.env.HOME + '/.ec2/credentials.json');
 
 var Account = dynamo.define('example-query-filter', {
   hashKey : 'name',

@@ -5,7 +5,7 @@ var dynamo = require('../index'),
     Joi    = require('joi'),
     async  = require('async');
 
-AWS.config.loadFromPath(process.env.HOME + '/.ec2/credentials.json');
+// AWS.config.loadFromPath(process.env.HOME + '/.ec2/credentials.json');
 
 var Account = dynamo.define('example-Account', {
   hashKey : 'AccountId',

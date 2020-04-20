@@ -6,7 +6,7 @@ var dynamo = require('../index'),
     Joi    = require('joi'),
     async  = require('async');
 
-AWS.config.loadFromPath(process.env.HOME + '/.ec2/credentials.json');
+// AWS.config.loadFromPath(process.env.HOME + '/.ec2/credentials.json');
 
 var Product = dynamo.define('example-parallel-scan', {
   hashKey : 'id',
